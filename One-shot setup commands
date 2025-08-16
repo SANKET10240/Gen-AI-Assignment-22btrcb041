@@ -1,0 +1,23 @@
+Run these in an empty project directory
+# Initialize repo
+echo "# Gen-AI-Assignment-22btrcb041" > README.md
+git init
+git add README.md
+git commit -m "chore: initial README"
+git branch -M main
+git remote add origin https://github.com/SANKET10240/Gen-AI-Assignment-22btrcb041.git
+
+# Create structure
+mkdir -p src/app/{api,core,db,schemas,services} tests .github/workflows alembic/versions
+touch src/app/{__init__.py,main.py}
+touch src/app/api/{__init__.py,routes.py,deps.py}
+touch src/app/core/{config.py,logging.py}
+touch src/app/db/{__init__.py,session.py,models.py}
+touch src/app/schemas/base.py
+touch src/app/services/competitors.py
+touch .env.example .gitignore pyproject.toml alembic.ini LICENSE
+touch tests/test_health.py
+touch .github/workflows/ci.yml
+
+# Write files (see sections below to paste contents)
+
