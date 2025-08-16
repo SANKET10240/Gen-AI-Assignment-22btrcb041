@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+.cache/
+.dist/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+alembic/versions/*.pyc
