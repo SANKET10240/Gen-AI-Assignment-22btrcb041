@@ -1,0 +1,31 @@
+Gen-AI-Assignment-22btrcb041/
+├─ src/
+│  └─ app/
+│     ├─ __init__.py
+│     ├─ main.py
+│     ├─ api/
+│     │  ├─ __init__.py
+│     │  ├─ routes.py
+│     │  └─ deps.py
+│     ├─ core/
+│     │  ├─ config.py
+│     │  └─ logging.py
+│     ├─ db/
+│     │  ├─ __init__.py
+│     │  ├─ session.py
+│     │  └─ models.py
+│     ├─ schemas/
+│     │  └─ base.py
+│     └─ services/
+│        └─ competitors.py
+├─ tests/
+│  └─ test_health.py
+├─ alembic/
+│  ├─ env.py
+│  └─ versions/  
+├─ .env.example
+├─ .gitignore
+├─ pyproject.toml
+├─ README.md
+├─ LICENSE
+└─ alembic.ini
