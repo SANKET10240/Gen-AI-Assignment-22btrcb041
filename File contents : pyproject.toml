@@ -1,0 +1,36 @@
+
+[project]
+name = "gen-ai-assignment-22btrcb041"
+version = "0.1.0"
+description = "Gen AI Assignment service"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "pydantic>=2.7.0",
+  "sqlalchemy>=2.0.30",
+  "alembic>=1.13.0",
+  "httpx>=0.27.0",
+  "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.4.0",
+  "mypy>=1.10.0",
+  "pytest>=8.2.0",
+  "pytest-asyncio>=0.23.0",
+  "types-python-dateutil",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-select = ["I", "B"]
+exclude = ["alembic/versions"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
